@@ -13,6 +13,12 @@ Create `kava-system-service.sh` from https://github.com/stake-capital/kava-stake
 
 And Run `./kava-system-service.sh`
 
+# Commands
+
+Stake Capital Kavavaloper: `kavavaloper1hfj6n07rt7qh7gsh75eerhh5mwccdfqa3yl5s3`
+
+```/home/ubuntu/go/bin/kvcli tx staking delegate kavavaloper1hfj6n07rt7qh7gsh75eerhh5mwccdfqa3yl5s3 90000000000ukava --from kava-wallet-1 --chain-id kava-testnet-2000```
+
 # Status and Logs 
 
 Status: `kvcli status`
@@ -35,8 +41,6 @@ kvcli q account $(kvcli keys show -a kava-wallet-1) --trust-node
 ```
 
 Voting power: `curl localhost:26657/status|grep -i voting`
-
-Output: 
 
 ```curl localhost:26657/status|grep -i voting
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
