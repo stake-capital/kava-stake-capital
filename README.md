@@ -35,8 +35,10 @@ kvcli q account $(kvcli keys show -a kava-wallet-1) --trust-node
 ```
 
 Voting power: `curl localhost:26657/status|grep -i voting`
-Output: `
-``curl localhost:26657/status|grep -i voting
+
+Output: 
+
+```curl localhost:26657/status|grep -i voting
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1109  100  1109    0     0  1083k      0 --:--:-- --:--:-- --:--:-- 1083k
