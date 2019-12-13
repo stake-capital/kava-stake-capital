@@ -22,6 +22,9 @@ WantedBy=multi-user.target" > kvd.service
 sudo mv kvd.service /etc/systemd/system/
 sudo systemctl enable kvd.service
 
+# ulimit
+
+
 # Output logs 
 # TODO: journalctl -u kvd.service -f
 tail -f /var/log/kvd/kvd.log
