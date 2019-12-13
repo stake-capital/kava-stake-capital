@@ -23,7 +23,7 @@ sudo mv kvd.service /etc/systemd/system/
 sudo systemctl enable kvd.service
 
 # ulimit
-
+ulimit -n 65535
 
 # Output logs 
 # TODO: journalctl -u kvd.service -f
